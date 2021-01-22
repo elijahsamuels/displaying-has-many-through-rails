@@ -135,7 +135,7 @@ end
 
 In our `Post#show` page, we'll display the title and content information for the post as well as the information for each comment associated with the post.
 
-```erb
+```ruby
 # app/views/posts/show.html.erb
 
 <h2><%= @post.title %></h2>
@@ -157,7 +157,7 @@ Let's say that on our `User#show` page we want our users to see a list of all of
 
 Because we've set up a join model, the interface will look almost identical. We can simply call the `posts` method on our user and iterate through.
 
-```erb
+```ruby
 # app/views/users/show.html.erb
 
 <h2><%= @user.username %> </h2> has commented on the following posts:
